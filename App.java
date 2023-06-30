@@ -5,7 +5,6 @@ public class App {
         Currency tomorrowsCurrency = todaysCurrency.setDateAndValue("2020-01-02", 18.00f); // Au fost create 2 obiecte de tip Currency,
                                                                                                       // al doilea prin crearea unei clone si modificarea ei
 
-
         System.out.println(todaysCurrency);
         System.out.println(tomorrowsCurrency);
         
@@ -25,19 +24,19 @@ final class Currency implements Cloneable {
         this.date = date;
     }
 
-    public String getBaseCode() {
+    public final String getBaseCode() {
         return baseCode;
     }
 
-    public String getCode() {
+    public final String getCode() {
         return code;
     }
 
-    public Float getValue() {
+    public final Float getValue() {
         return value;
     }
 
-    public String getDate() {
+    public final String getDate() {
         return date;
     }
 
